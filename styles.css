@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 2rem;
+    height: 100vh;
+    background: white;
+}
+
+.toolbox {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+canvas {
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.052);
+}
+
+.selector,
+.changes {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.decrease,
+.increase,
+.clear {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 1.1rem;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.decrease:active,
+.increase:active,
+.clear:active,
+.color:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    color: #090909;
+    font-size: 1.1rem;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.size{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .toolbox {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    canvas {
+        width: 90%;
+    }
+
+    .decrease,
+    .increase,
+    .clear,
+    .color {
+        font-size: 1rem;
+        padding: 0.6em 1.5em;
+    }
+
+    .size {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .toolbox {
+        width: 90%;
+    }
+
+    canvas {
+        width: 100%;
+    }
+
+    .decrease,
+    .increase,
+    .clear,
+    .color {
+        font-size: 0.9rem;
+        padding: 0.5em 1.2em;
+    }
+
+    .size {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        gap: 1rem;
+    }
+
+    .toolbox {
+        width: 100%;
+    }
+
+    .decrease,
+    .increase,
+    .clear,
+    .color {
+        font-size: 0.8rem;
+    }
+
+    canvas {
+        width: 100%;
+    }
+
+    .size {
+        font-size: 0.8rem;
+    }
+}
