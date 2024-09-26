@@ -21,7 +21,7 @@ The **Drawing App** is an intuitive web-based application designed for users to 
 ### How to Use:
 1. Clone the repository:
    ```bash
-   https://github.com/Jasim-ansari-23/Drawing-App.git
+   https://github.com/mo-jasim/Drawing-App.git
    ```
 2. Open the `index.html` file in your preferred browser.
 3. Start drawing by using your mouse or touchscreen on the canvas.
